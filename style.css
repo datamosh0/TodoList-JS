@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+body {
+  height: 100vh;
+  background: #fff5de;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin: 20px;
+  font-size: 36px;
+}
+
+/* INPUT SECTION */
+.inputTodo {
+  border: 2px solid #2e294e;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.inputTodo button {
+  outline: none;
+  background: rgba(119, 136, 153, 0.4);
+  height: 2rem;
+  width: 5rem;
+}
+.inputMsg {
+  width: 20rem;
+  height: 2rem;
+  outline: none;
+  border-right: 2px solid #2e294e;
+}
+
+/* TODO SECTION */
+.todo {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+  margin: 7px;
+}
+.todoTxt {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+}
+.complete {
+  width: 28px;
+}
+
+.clearBtn {
+  margin-top: 100px;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(119, 136, 153, 0.4);
+}
+
+/* Modal Window */
+.crossOut {
+  text-decoration: line-through;
+}
+.modal {
+  position: absolute;
+  top: 10%;
+  background: #bdc3c7;
+  width: 400px;
+  height: 280px;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+}
+
+.modalContent {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalContent input {
+  margin-top: 15px;
+  width: 13rem;
+}
+
+.modalContent button {
+  margin: 8px;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.error {
+  color: #d7263d;
+}
